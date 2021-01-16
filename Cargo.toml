@@ -1,0 +1,35 @@
+[package]
+name = "pixiv"
+version = "0.1.0"
+authors = ["mr.duan.1992@gmail.com <1010227137@qq.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name = "pixiv"
+path = "src/main.rs"
+
+[[bin]]
+name = "test"
+path = "src/test.rs"
+
+[dependencies]
+isahc = "0.9.14"
+async-std = "1.8"
+mongodb = {version = "1.1.0",features = ["async-std-runtime"],default-features = false}
+fern = "0.6.0"
+log = "0.4"
+http = "0.2"
+hex = "*"
+bytes = "*"
+futures = "*"
+serde_json = "*"
+serde = "*"
+urlencoding = "*"
+chrono = "*"
+flate2 = "*"
+anyhow = "1.0"
+thiserror = "1.0"
+clap = "2.33.3"
+lazy_static = "*"
+tide = "0.14.0"
